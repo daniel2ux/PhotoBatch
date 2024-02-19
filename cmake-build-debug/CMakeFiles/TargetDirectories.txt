@@ -1,0 +1,3 @@
+/home/daniel/Projects/PhotoBatch/cmake-build-debug/CMakeFiles/PhotoBatch.dir
+/home/daniel/Projects/PhotoBatch/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/daniel/Projects/PhotoBatch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
