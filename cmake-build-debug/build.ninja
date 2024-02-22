@@ -49,15 +49,21 @@ cmake_ninja_workdir = /home/daniel/Projects/PhotoBatch/cmake-build-debug/
 
 build cmake_object_order_depends_target_PhotoBatch: phony || CMakeFiles/PhotoBatch.dir
 
-build CMakeFiles/PhotoBatch.dir/main.cpp.o: CXX_COMPILER__PhotoBatch_unscanned_Debug /home/daniel/Projects/PhotoBatch/main.cpp || cmake_object_order_depends_target_PhotoBatch
-  DEP_FILE = CMakeFiles/PhotoBatch.dir/main.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
+build CMakeFiles/PhotoBatch.dir/PhotoBatch.cpp.o: CXX_COMPILER__PhotoBatch_unscanned_Debug /home/daniel/Projects/PhotoBatch/PhotoBatch.cpp || cmake_object_order_depends_target_PhotoBatch
+  DEP_FILE = CMakeFiles/PhotoBatch.dir/PhotoBatch.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/PhotoBatch.dir
   OBJECT_FILE_DIR = CMakeFiles/PhotoBatch.dir
 
 build CMakeFiles/PhotoBatch.dir/ArgumentParser.cpp.o: CXX_COMPILER__PhotoBatch_unscanned_Debug /home/daniel/Projects/PhotoBatch/ArgumentParser.cpp || cmake_object_order_depends_target_PhotoBatch
   DEP_FILE = CMakeFiles/PhotoBatch.dir/ArgumentParser.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PhotoBatch.dir
+  OBJECT_FILE_DIR = CMakeFiles/PhotoBatch.dir
+
+build CMakeFiles/PhotoBatch.dir/Utils.cpp.o: CXX_COMPILER__PhotoBatch_unscanned_Debug /home/daniel/Projects/PhotoBatch/Utils.cpp || cmake_object_order_depends_target_PhotoBatch
+  DEP_FILE = CMakeFiles/PhotoBatch.dir/Utils.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/PhotoBatch.dir
   OBJECT_FILE_DIR = CMakeFiles/PhotoBatch.dir
 
@@ -69,7 +75,7 @@ build CMakeFiles/PhotoBatch.dir/ArgumentParser.cpp.o: CXX_COMPILER__PhotoBatch_u
 #############################################
 # Link the executable PhotoBatch
 
-build PhotoBatch: CXX_EXECUTABLE_LINKER__PhotoBatch_Debug CMakeFiles/PhotoBatch.dir/main.cpp.o CMakeFiles/PhotoBatch.dir/ArgumentParser.cpp.o
+build PhotoBatch: CXX_EXECUTABLE_LINKER__PhotoBatch_Debug CMakeFiles/PhotoBatch.dir/PhotoBatch.cpp.o CMakeFiles/PhotoBatch.dir/ArgumentParser.cpp.o CMakeFiles/PhotoBatch.dir/Utils.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/PhotoBatch.dir
   POST_BUILD = :
